@@ -1,0 +1,43 @@
+{
+
+  "manifest_version": 2,
+  "name": "VCC Message Chime",
+  "version": "0.1",
+
+  "author": "Ori Barbut",
+  "homepage_url": "https://github.com/obar/vcc-message-chime/",
+
+  "description": "Adds a chime sound for new messages on Rogers VCC.",
+
+  "icons": {
+    "48": "vcc-chime-icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://rbs-d-nsps-web.vcc.rogers.com/*"],
+      "js": ["vcc-chime.js"]
+    }
+  ],
+
+  "permissions": ["storage"],
+
+  "browser_action": {
+    "default_icon": "vcc-chime-icon.svg",
+    "default_title": "VCC Chime",
+    "default_popup": "conf.html"
+  },
+
+  "options_ui": {
+    "page": "conf.html",
+    "browser_style": true,
+    "chrome_style": true
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "update_url": "https://github.com/obar/vcc-message-chime/blob/main/updates.json"
+    }
+  }
+
+}

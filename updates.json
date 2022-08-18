@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "{d35b28d6-15b7-47a6-9d43-faf0be7b9c61}": {
+      "updates": [
+        {
+          "version": "0.1",
+          "update_link": "https://github.com/obar/vcc-message-chime/releases/download/v0.1/vcc-message-chime-0-1.xpi"
+        }
+      ]
+    }
+  }
+}
